@@ -10,6 +10,7 @@ class Conf {
     // Sur votre machine, vous devrez creer une BDD
     'database' => 'becp',
     // A l'IUT, c'est votre login
+    
     // Sur votre machine, vous avez surement un compte 'root'
     'login' => 'becp',
     // A l'IUT, c'est votre mdp (INE par defaut)
