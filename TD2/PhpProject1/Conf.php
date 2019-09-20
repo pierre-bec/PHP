@@ -2,6 +2,8 @@
 
 class Conf {
    
+     static private $debug = True; 
+    
   static private $databases = array(
     // Le nom d'hote est webinfo a l'IUT
     // ou localhost sur votre machine
@@ -15,7 +17,7 @@ class Conf {
     'login' => 'becp',
     // A l'IUT, c'est votre mdp (INE par defaut)
     // Sur votre machine personelle, vous avez creez ce mdp a l'installation
-    'password' => '060970747FJ'
+    'password' => '7895'
   );
    
   static public function getLogin() {
@@ -23,7 +25,7 @@ class Conf {
     return self::$databases['login'];
   }
   
-  static public function getHorstname() {
+  static public function getHostname() {
       return self::$databases['hostname'];
   }
   
@@ -34,5 +36,9 @@ class Conf {
   static public function getPassword() {
       return self::$databases['password'];
   }
+  
+  static public function getDebug() {
+    	return self::$debug;
+    }
    
 }
