@@ -18,7 +18,7 @@ class Model {
                      array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
              self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (Exception $ex) {
-            echo $e->getMessage(); // affiche un message d'erreur
+            echo $ex->getMessage(); // affiche un message d'erreur
             die();
 
         }
