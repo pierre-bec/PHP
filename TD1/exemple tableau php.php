@@ -14,7 +14,7 @@
 
           
 
-          echo "Voiture {$voiture['immatriculation']} de marque {$voiture['marque']} (couleur {$voiture['couleur']} )";
+          echo "ModelVoiture {$voiture['immatriculation']} de marque {$voiture['marque']} (couleur {$voiture['couleur']} )";
         ?>
     </body>
 </html> 

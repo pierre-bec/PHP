@@ -53,12 +53,12 @@ public function __construct($m = NULL, $c = NULL, $i = NULL) {
            
   // une methode d'affichage.
   public function afficher() {
-    return "Voiture $this->immatriculation de marque $this->marque (couleur $this->couleur) </br>";
+    return "ModelVoiture $this->immatriculation de marque $this->marque (couleur $this->couleur) </br>";
   }
   
   public static function getAllVoitures() {
     $rep = Model::$pdo->query("SELECT * FROM voiture");
-    $rep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+    $rep->setFetchMode(PDO::FETCH_CLASS, 'ModelVoiture');
     $tab_voit = $rep->fetchAll();
     return $tab_voit;
   }

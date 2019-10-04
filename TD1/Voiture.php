@@ -42,7 +42,7 @@ class Voiture {
            
   // une methode d'affichage.
   public function afficher() {
-    return "Voiture $this->immatriculation de marque $this->marque (couleur $this->couleur)";
+    return "ModelVoiture $this->immatriculation de marque $this->marque (couleur $this->couleur)";
   }
 }
 ?>

@@ -9,7 +9,7 @@
         <?php
 
         require_once('Voiture.php');
-        $voiture1 = new Voiture($_GET['marque'], $_GET['couleur'], $_GET['immatriculation']);
+        $voiture1 = new ModelVoiture($_GET['marque'], $_GET['couleur'], $_GET['immatriculation']);
         $voiture1->save(); 
         echo "<br>";
         echo $voiture1->afficher();

@@ -32,7 +32,7 @@
             for ($i=0; $i < count($voitures); $i++) {
               echo "<ul>";
                 $voitureA = $voitures[$i];
-                $voitureAc = "Voiture {$voitureA['immatriculation']} de marque {$voitureA['marque']} (couleur {$voitureA['couleur']} )";
+                $voitureAc = "ModelVoiture {$voitureA['immatriculation']} de marque {$voitureA['marque']} (couleur {$voitureA['couleur']} )";
                 echo "$voitureAc <br>";
               
             }

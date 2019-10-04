@@ -2,7 +2,7 @@
 
 require_once 'Voiture.php';
 
-$tab = Voiture::getAllVoitures();
+$tab = ModelVoiture::getAllVoitures();
 
 foreach ($tab as $obj) {
     echo $obj->afficher();

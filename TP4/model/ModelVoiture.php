@@ -2,7 +2,7 @@
 
 require_once 'Model.php';
 
-class Voiture {
+class ModelVoiture {
    
   private $marque;
   private $couleur;
@@ -51,10 +51,10 @@ public function __construct($m = NULL, $c = NULL, $i = NULL) {
   
   
            
-  // une methode d'affichage.
+  /* une methode d'affichage.
   public function afficher() {
     return "ModelVoiture $this->immatriculation de marque $this->marque (couleur $this->couleur) </br>";
-  }
+  }*/
   
   public static function getAllVoitures() {
     $rep = Model::$pdo->query("SELECT * FROM voiture");
